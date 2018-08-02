@@ -1,0 +1,16 @@
+{
+  "name": "normalize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eshulga/normalize.git",
+  "author": "Evgenii Shulga <ewgenij.shulga@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel ./src/index.html"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "normalizr": "^3.2.4",
+    "parcel-bundler": "^1.9.7"
+  }
+}
