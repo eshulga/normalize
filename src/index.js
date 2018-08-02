@@ -12,11 +12,11 @@ const students = new schema.Entity('students', {
 })
 
 
-const logOut = (result) => {
+const showResult = (result) => {
   const normalized = normalize(result, [students])
   console.log(result);
   console.log(normalized);
 }
 
 axios.get('https://api.myjson.com/bins/y355u')
-  .then(response => logOut(response.data));
+  .then(response => showResult(response.data));

@@ -19664,14 +19664,14 @@ var students = new _normalizr.schema.Entity('students', {
   courses: [course]
 });
 
-var logOut = function logOut(result) {
+var showResult = function showResult(result) {
   var normalized = (0, _normalizr.normalize)(result, [students]);
   console.log(result);
   console.log(normalized);
 };
 
 _axios2.default.get('https://api.myjson.com/bins/y355u').then(function (response) {
-  return logOut(response.data);
+  return showResult(response.data);
 });
 },{"axios":"..\\node_modules\\axios\\index.js","normalizr":"..\\node_modules\\normalizr\\dist\\src\\index.js"}],"..\\node_modules\\parcel-bundler\\src\\builtins\\hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
